@@ -86,8 +86,8 @@ class _CardScreenState extends State<CardScreen> {
             PrimaryButton(
               pressListener: () async {
               EasyLoading.show(status: "Connect", maskType: EasyLoadingMaskType.black);
-                //await Future.delayed(Duration(seconds: 4));
-                //EasyLoading.dismiss();
+                await Future.delayed(Duration(seconds: 4));
+                EasyLoading.dismiss();
                 Navigator.of(context).pushNamed(pin);
 /*                if(_formKey.currentState.validate()){
                   cardBloc.chargeCard(
